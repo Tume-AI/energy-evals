@@ -1,0 +1,30 @@
+models:
+  - provider: openrouter
+    model: openai/gpt-4o-mini
+    effort: medium
+    provider_routing:
+      only: [openai]
+
+questions_file: data/evals_tasks_only_188.csv
+
+observability:
+  enabled: true
+  output_dir: ./benchmark_traces
+  run_name: benchmark
+
+agent:
+  max_iterations: 50
+  history_window: 20
+  num_trials: 1
+  shuffle: true
+  seed_mode: rotate
+  seed: 101
+  tool_timeout: 240.0
+
+tools:
+  enabled: true
+  exclude: []
+
+output:
+  results_dir: ./benchmark_results
+  save_answers: true

@@ -1,0 +1,71 @@
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Type checking
+.mypy_cache/
+
+# IDE
+.idea/
+.vs/
+.vscode/
+.cursor/
+*.swp
+*.swo
+*~
+
+# Linting
+.ruff_cache/
+
+# Results and outputs
+results/
+/benchmark_results/
+/benchmark_traces/
+evaluation_results/
+agent_outputs/
+*.json.bak
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+
+# folders
+artefacts/
